@@ -12,7 +12,9 @@
   cursor: pointer;
 }
 
-.btn:focus {
+.btn:focus,
+.pill[aria-selected='true']:focus-visible,
+.pill[aria-selected='true']:focus-within {
   outline: 0.2rem solid currentColor;
   outline-offset: 0.2rem;
 }
