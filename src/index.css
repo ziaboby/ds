@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light dark;
+  --c-light: #eee;
+  --c-dark: #111;
+
+  --spacing-0: 0;
+  --spacing-4XS: 0.2rem;
+  --spacing-3XS: 0.4rem;
+  --spacing-2XS: 0.8rem;
+  --spacing-XS: 1.2rem;
+  --spacing-S: 1.6rem;
+  --spacing-M: 2rem;
+  --spacing-L: 2.4rem;
+  --spacing-XL: 3.2rem;
+  --spacing-2XL: 4.8rem;
+
+  --main-font-size: 1.2rem;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: light-dark(var(--c-light), var(--c-dark));
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  font-style: normal;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --main-font-size: 1.4rem;
+  }
+}
