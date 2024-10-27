@@ -1,4 +1,4 @@
-import Tab from '../Tab';
+import Tab from '..';
 import { Label } from './utils';
 
 export default {
