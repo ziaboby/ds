@@ -10,6 +10,7 @@
     "prettier": "pnpm exec prettier src/ --write",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
+    "test:watch": "vitest watch",
     "tsc": "tsc -b"
   },
   "dependencies": {
