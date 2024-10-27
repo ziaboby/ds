@@ -20,20 +20,20 @@ export default {
 };
 
 export {
-  PillDefault,
   PillDefaultSelected,
-  PillHover,
   PillHoverSelected,
-  PillActive,
   PillActiveSelected,
-  PillFocus,
   PillFocusSelected,
-  UnderlineDefault,
+  PillDefault,
+  PillHover,
+  PillActive,
+  PillFocus,
   UnderlineDefaultSelected,
-  UnderlineHover,
   UnderlineHoverSelected,
-  UnderlineActive,
   UnderlineActiveSelected,
-  UnderlineFocus,
   UnderlineFocusSelected,
+  UnderlineDefault,
+  UnderlineHover,
+  UnderlineActive,
+  UnderlineFocus,
 } from './Tab.stories';
