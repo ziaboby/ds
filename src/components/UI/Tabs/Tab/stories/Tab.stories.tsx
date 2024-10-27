@@ -13,6 +13,7 @@ export default {
 
 export const PillDefault = {
   args: {
+    id: '1',
     selected: false,
     variant: 'pill',
   },
@@ -20,15 +21,15 @@ export const PillDefault = {
 
 export const PillDefaultSelected = {
   args: {
-    props: {
-      selected: true,
-      variant: 'pill',
-    },
+    id: '2',
+    selected: true,
+    variant: 'pill',
   },
 };
 
 export const PillHover = {
   args: {
+    id: '3',
     selected: false,
     variant: 'pill',
   },
@@ -37,6 +38,7 @@ export const PillHover = {
 
 export const PillHoverSelected = {
   args: {
+    id: '4',
     selected: true,
     variant: 'pill',
   },
@@ -45,6 +47,7 @@ export const PillHoverSelected = {
 
 export const PillActive = {
   args: {
+    id: '5',
     selected: false,
     variant: 'pill',
   },
@@ -53,6 +56,7 @@ export const PillActive = {
 
 export const PillActiveSelected = {
   args: {
+    id: '6',
     selected: true,
     variant: 'pill',
   },
@@ -61,6 +65,7 @@ export const PillActiveSelected = {
 
 export const PillFocus = {
   args: {
+    id: '7',
     selected: false,
     variant: 'pill',
   },
@@ -69,16 +74,17 @@ export const PillFocus = {
 
 export const PillFocusSelected = {
   args: {
-    props: {
-      selected: true,
-      variant: 'pill',
-    },
+    id: '8',
+
+    selected: true,
+    variant: 'pill',
   },
   parameters: { pseudo: { focus: true } },
 };
 
 export const UnderlineDefault = {
   args: {
+    id: '9',
     selected: false,
     variant: 'underline',
   },
@@ -86,6 +92,7 @@ export const UnderlineDefault = {
 
 export const UnderlineDefaultSelected = {
   args: {
+    id: '10',
     selected: true,
     variant: 'underline',
   },
@@ -93,6 +100,7 @@ export const UnderlineDefaultSelected = {
 
 export const UnderlineHover = {
   args: {
+    id: '11',
     selected: false,
     variant: 'underline',
   },
@@ -101,6 +109,7 @@ export const UnderlineHover = {
 
 export const UnderlineHoverSelected = {
   args: {
+    id: '12',
     selected: true,
     variant: 'underline',
   },
@@ -109,6 +118,7 @@ export const UnderlineHoverSelected = {
 
 export const UnderlineActive = {
   args: {
+    id: '13',
     selected: false,
     variant: 'underline',
   },
@@ -117,6 +127,7 @@ export const UnderlineActive = {
 
 export const UnderlineActiveSelected = {
   args: {
+    id: '14',
     selected: true,
     variant: 'underline',
   },
@@ -125,6 +136,7 @@ export const UnderlineActiveSelected = {
 
 export const UnderlineFocus = {
   args: {
+    id: '15',
     selected: false,
     variant: 'underline',
   },
@@ -133,6 +145,7 @@ export const UnderlineFocus = {
 
 export const UnderlineFocusSelected = {
   args: {
+    id: '16',
     selected: true,
     variant: 'underline',
   },
