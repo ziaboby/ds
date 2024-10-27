@@ -1,13 +1,10 @@
 import Tab from './Tab';
 import TabContent from './TabContent';
 import TabsList from './TabsList';
-
-function Wrapper({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <div className={className}>{children}</div>;
-}
+import TabWrapper from './TabWrapper';
 
 const Tabs = {
-  Wrapper,
+  Wrapper: TabWrapper,
   TabsList,
   Tab,
   TabContent,
