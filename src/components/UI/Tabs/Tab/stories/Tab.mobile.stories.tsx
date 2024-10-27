@@ -11,7 +11,7 @@ export default {
       </div>
     ),
   ],
-  title: 'UI/Tabs/Tab Mobile',
+  title: 'UI/Tabs/Tab/Mobile',
   tags: ['autodocs'],
   args: { children: <Label /> },
   parameters: {

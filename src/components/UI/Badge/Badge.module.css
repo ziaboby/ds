@@ -1,0 +1,26 @@
+.w {
+  border-radius: 0.8rem;
+  color: var(--color-neutral20);
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: var(--spacing-4XS) var(--spacing-3XS);
+}
+
+.negative {
+  background-color: var(--color-negative);
+}
+
+.neutral {
+  background-color: var(--color-neutral80);
+}
+
+.positive {
+  background-color: var(--color-positive);
+}
+
+@media screen and (min-width: 768px) {
+  .w {
+    padding: var(--spacing-3XS) var(--spacing-2XS);
+  }
+}
