@@ -12,8 +12,7 @@
   cursor: pointer;
 }
 
-.btn:focus-visible,
-.btn:focus-within {
+.btn:focus {
   outline: 0.2rem solid currentColor;
   outline-offset: 0.2rem;
 }
@@ -47,6 +46,7 @@
   background-color: light-dark(var(--color-neutral40), var(--color-neutral80));
 }
 
+.pill[aria-selected='true']:focus,
 .pill[aria-selected='true']:focus-visible,
 .pill[aria-selected='true']:focus-within {
   outline-color: var(--color-neutral20);
@@ -77,6 +77,7 @@
 }
 
 .underline:active::after,
+.underline:focus::after,
 .underline:focus-visible::after,
 .underline:focus-within::after,
 .underline:hover::after {
