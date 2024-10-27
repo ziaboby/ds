@@ -15,4 +15,8 @@ export interface TabProps {
    * The UI variant of the tab
    */
   variant: 'pill' | 'underline';
+  /**
+   * The callback is called when the tab is clicked
+   */
+  onClick?: () => void;
 }
