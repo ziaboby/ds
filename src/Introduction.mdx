@@ -16,8 +16,8 @@ This is a Design System with some examples of atomic components and patterns.
         │   │   │   ├── Tab.mobile.stories.tsx
         │   │   │   └── Tab.stories.tsx
         │   │   │   └── utils.tsx
+        │   │   ├── index.tsx
         │   │   ├── Tab.module.css
-        │   │   ├── Tab.tsx
         │   │   └── Tab.types.ts
         │   ├── TabContent/
         │   │   ├── TabContent.tsx
@@ -27,12 +27,27 @@ This is a Design System with some examples of atomic components and patterns.
         │   │   │   ├── TabsList.mobile.stories.tsx
         │   │   │   └── TabsList.stories.tsx
         │   │   │   └── utils.tsx
+        │   │   ├── index.tsx
         │   │   ├── TabsList.module.css
-        │   │   ├── TabsList.tsx
         │   │   └── TabsList.types.ts
         │   └── Tabs.tsx
         │   └── utils.ts
         └── ...
+    └── Pattern/
+        ├── Tabs/
+        │   ├── stories/
+        │   │   │   ├── ...
+        │   ├── TabContainer/
+        │   │   │   ├── ...
+        │   ├── ...
+        │   ├── index.tsx
+        │   ├── Tabs.test.tsx
+        └── ...
+
 ├── index.css
 └── index.tsx
 ```
+
+The _UI_ folder includes the components styles, while the _Pattern_ one the shared logic related to how the components should work.
+
+Stories are collected under a _stories_ folder since there are two version, one for each device.
