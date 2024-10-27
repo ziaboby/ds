@@ -52,7 +52,7 @@ export const PillFocusSelected = {
     selected: true,
     variant: 'pill',
   },
-  parameters: { pseudo: { focus: true } },
+  parameters: { pseudo: { focusVisible: true } },
 };
 
 export const PillDefault = {
@@ -87,7 +87,7 @@ export const PillFocus = {
     selected: false,
     variant: 'pill',
   },
-  parameters: { pseudo: { focus: true } },
+  parameters: { pseudo: { focusVisible: true } },
 };
 
 export const UnderlineDefaultSelected = {
@@ -122,7 +122,7 @@ export const UnderlineFocusSelected = {
     selected: true,
     variant: 'underline',
   },
-  parameters: { pseudo: { focus: true } },
+  parameters: { pseudo: { focusVisible: true } },
 };
 
 export const UnderlineDefault = {
@@ -157,5 +157,5 @@ export const UnderlineFocus = {
     selected: false,
     variant: 'underline',
   },
-  parameters: { pseudo: { focus: true } },
+  parameters: { pseudo: { focusVisible: true } },
 };
