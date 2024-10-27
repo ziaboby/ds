@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Tabs from '../../../UI/Tabs/Tabs';
+import Tabs from '../../../UI/Tabs';
 import { TabsContextProvider, type TabsContextType } from '../TabsContext';
 import type { TabsContainerProps } from './TabsContainer.types';
 

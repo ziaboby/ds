@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { expect, test, vi } from 'vitest';
-import Tabs from './Tabs';
+import Tabs from '.';
 import { getTabIds } from './utils';
 
 const ids = ['1', '2', '3'];

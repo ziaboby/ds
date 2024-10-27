@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { expect, test } from 'vitest';
-import Badge from './Badge';
+import Badge from '.';
 import { BadgeProps } from './Badge.types';
 
 interface TestCase extends BadgeProps {

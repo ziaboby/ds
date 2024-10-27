@@ -1,4 +1,4 @@
-import TabsList from '../../UI/Tabs/TabsList/TabsList';
+import TabsList from '../../UI/Tabs/TabsList';
 import TabContainer from './TabContainer';
 import TabContentContainer from './TabContentContainer';
 import TabsContainer from './TabsContainer';

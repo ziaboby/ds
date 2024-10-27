@@ -1,5 +1,5 @@
 import type { TabProps } from '../../../UI/Tabs/Tab/Tab.types';
-import Tabs from '../../../UI/Tabs/Tabs';
+import Tabs from '../../../UI/Tabs';
 import { useTabsContext } from '../TabsContext';
 
 export default function TabContainer(props: Omit<TabProps, 'selected' | 'onClick'>) {

@@ -1,5 +1,5 @@
-import Badge from '../../../Badge/Badge';
-import Tab from '../../Tab/Tab';
+import Badge from '../../../Badge';
+import Tab from '../../Tab';
 import type { TabProps } from '../../Tab/Tab.types';
 
 export function Sample({ variant }: Pick<TabProps, 'variant'>) {
