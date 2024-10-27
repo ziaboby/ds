@@ -1,4 +1,4 @@
-export interface TabProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface TabProps {
   /**
    * The content of the tab, any (children) element will be rendered on the same row
    */
