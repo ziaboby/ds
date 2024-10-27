@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { expect, test, vi } from 'vitest';
-import Tab from './Tab';
+import Tab from '.';
 
 test('should render', () => {
   render(

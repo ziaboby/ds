@@ -1,5 +1,5 @@
 import type { TabContentProps } from '../../../UI/Tabs/TabContent/TabContent.types';
-import Tabs from '../../../UI/Tabs/Tabs';
+import Tabs from '../../../UI/Tabs';
 import { useTabsContext } from '../TabsContext';
 
 export default function TabContentContainer(props: TabContentProps) {

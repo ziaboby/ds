@@ -1,5 +1,5 @@
-import Tab from '../../Tabs/Tab/Tab';
-import Badge from '../Badge';
+import Tab from '../../Tabs/Tab';
+import Badge from '..';
 
 export default {
   component: Badge,

@@ -1,4 +1,4 @@
-import TabsList from '../TabsList';
+import TabsList from '..';
 import { Label } from './utils';
 
 export default {
