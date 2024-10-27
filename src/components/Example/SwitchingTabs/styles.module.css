@@ -1,0 +1,19 @@
+.w {
+  margin: 2rem;
+}
+
+.list,
+.grid {
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

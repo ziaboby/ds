@@ -1,7 +1,7 @@
-import { Sample } from './utils';
+import SwitchingTabs from '../../../Example/SwitchingTabs';
 
 export default {
-  component: Sample,
+  component: SwitchingTabs,
   title: 'Pattern/Tabs/Mobile',
   tags: ['autodocs'],
   parameters: {

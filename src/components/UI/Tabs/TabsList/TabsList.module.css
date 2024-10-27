@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .pill {
