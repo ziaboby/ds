@@ -3,7 +3,7 @@ import Badge from '../Badge';
 
 export default {
   component: Badge,
-  title: 'UI/Badge/Desktop',
+  title: 'UI/Badge/Tablet',
   tags: ['autodocs'],
   args: {},
   parameters: {
