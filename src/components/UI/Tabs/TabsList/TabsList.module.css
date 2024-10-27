@@ -2,8 +2,10 @@
   align-items: center;
   display: flex;
   justify-content: flex-start;
+  margin: -0.4rem;
   max-width: 100%;
   overflow-x: auto;
+  padding: 0.4rem;
 }
 
 .pill {
