@@ -12,6 +12,8 @@
   --color-neutral20: #1b2134;
   --color-neutral10: #111;
   --color-neutral0: #000;
+  --color-positive: #b1ffc7;
+  --color-negative: #ffbfb1;
   /*spacing*/
   --spacing-0: 0;
   --spacing-4XS: 0.2rem;
