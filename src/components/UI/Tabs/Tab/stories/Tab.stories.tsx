@@ -3,6 +3,14 @@ import { Label } from './utils';
 
 export default {
   component: Tab,
+  decorators: [
+    // @ts-expect-error any type
+    (Story) => (
+      <div role="tablist">
+        <Story />
+      </div>
+    ),
+  ],
   title: 'UI/Tabs/Tab',
   tags: ['autodocs'],
   args: { children: <Label /> },
