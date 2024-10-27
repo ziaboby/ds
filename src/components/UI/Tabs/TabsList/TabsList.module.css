@@ -1,0 +1,25 @@
+.w {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.pill {
+  gap: var(--spacing-2XS);
+}
+
+.underline {
+  gap: var(--spacing-L);
+}
+
+@media screen and (min-width: 768px) {
+  .pill {
+    gap: var(--spacing-XS);
+  }
+
+  .underline {
+    gap: var(--spacing-XL);
+  }
+}
