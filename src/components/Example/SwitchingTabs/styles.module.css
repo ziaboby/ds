@@ -1,11 +1,16 @@
 .w {
-  margin: 2rem;
+  margin: var(--spacing-M);
+}
+
+.title {
+  margin: var(--spacing-XS) 0;
+  text-transform: capitalize;
 }
 
 .list,
 .grid {
   gap: 1rem;
-  margin: 1rem;
+  margin: var(--spacing-XS);
 }
 
 .list {

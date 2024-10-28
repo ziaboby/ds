@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 export default function SwitchingTabs({ variant }: Pick<TabProps, 'variant'>) {
   return (
     <TabsPattern.Wrapper defaultTabId="1" className={styles.w}>
+      <h2 className={styles.title}>{variant} Tabs</h2>
       <Label />
       <TabsPattern.TabsList variant={variant} labelId="tabs-description">
         <TabsPattern.Tab variant={variant} id="1">
