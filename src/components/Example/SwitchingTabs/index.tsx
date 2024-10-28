@@ -3,43 +3,31 @@ import { Placeholder } from '../../UI/Placeholder';
 import { TabProps } from '../../UI/Tabs/Tab/Tab.types';
 import styles from './styles.module.css';
 
+const ids = [
+  ['1', 'Emails'],
+  ['2', 'Files'],
+  ['3', 'Edits'],
+  ['4', 'Dashboard'],
+  ['5', 'Messages'],
+];
+
 export default function SwitchingTabs({ variant }: Pick<TabProps, 'variant'>) {
   return (
     <TabsPattern.Wrapper defaultTabId={getTabUniqueId('1', variant)} className={styles.w}>
       <h2 className={styles.title}>{variant} Tabs</h2>
       <Label variant={variant} />
       <TabsPattern.TabsList variant={variant} labelId={getLabelId(variant)}>
-        <TabsPattern.Tab variant={variant} id={getTabUniqueId('1', variant)}>
-          Emails
-        </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id={getTabUniqueId('2', variant)}>
-          Files
-        </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id={getTabUniqueId('3', variant)}>
-          Edits
-        </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id={getTabUniqueId('4', variant)}>
-          Dashboard
-        </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id={getTabUniqueId('5', variant)}>
-          Messages
-        </TabsPattern.Tab>
+        {ids.map(([id, tabName]) => (
+          <TabsPattern.Tab variant={variant} id={getTabUniqueId(id, variant)}>
+            {tabName}
+          </TabsPattern.Tab>
+        ))}
       </TabsPattern.TabsList>
-      <TabsPattern.TabContent id={getTabUniqueId('1', variant)}>
-        <FakeTabContent1 />
-      </TabsPattern.TabContent>
-      <TabsPattern.TabContent id={getTabUniqueId('2', variant)}>
-        <FakeTabContent2 />
-      </TabsPattern.TabContent>
-      <TabsPattern.TabContent id={getTabUniqueId('3', variant)}>
-        <FakeTabContent1 />
-      </TabsPattern.TabContent>
-      <TabsPattern.TabContent id={getTabUniqueId('4', variant)}>
-        <FakeTabContent2 />
-      </TabsPattern.TabContent>
-      <TabsPattern.TabContent id={getTabUniqueId('5', variant)}>
-        <FakeTabContent1 />
-      </TabsPattern.TabContent>
+      {ids.map(([id], index) => (
+        <TabsPattern.TabContent id={getTabUniqueId(id, variant)}>
+          {index % 2 == 0 ? <FakeTabContent1 /> : <FakeTabContent2 />}
+        </TabsPattern.TabContent>
+      ))}
     </TabsPattern.Wrapper>
   );
 }
