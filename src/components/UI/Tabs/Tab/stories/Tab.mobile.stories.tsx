@@ -1,14 +1,14 @@
 import Tab from '..';
-import { Label } from './utils';
+import { Label, Wrapper } from './utils';
 
 export default {
   component: Tab,
   decorators: [
     // @ts-expect-error any type
-    (Story) => (
-      <div role="tablist">
+    (Story, { args }) => (
+      <Wrapper id={args.id}>
         <Story />
-      </div>
+      </Wrapper>
     ),
   ],
   title: 'UI/Tabs/Tab/Mobile',

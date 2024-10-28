@@ -1,5 +1,5 @@
 import TabsList from '..';
-import { Label, Sample, SampleWithBadge } from './utils';
+import { Label, Sample, SampleWithBadge, TabContents } from './utils';
 
 export default {
   component: TabsList,
@@ -14,6 +14,7 @@ export default {
       <>
         <Label />
         <Story />
+        <TabContents />
       </>
     ),
   ],

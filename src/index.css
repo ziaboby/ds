@@ -29,6 +29,44 @@
   --main-font-size: 1.2rem;
   --main-bg: light-dark(--color-neutral50, --color-neutral10);
   --main-text-color: light-dark(--color-neutral10, --color-neutral50);
+  --tab-default-text-color: light-dark(var(--color-neutral20), var(--color-neutral100));
+  --tab-pill-bg: light-dark(var(--color-neutral100), var(--color-neutral20));
+  --tab-pill-hover-bg: light-dark(var(--color-neutral90), var(--color-neutral30));
+  --tab-pill-active-bg: light-dark(var(--color-neutral80), var(--color-neutral40));
+  --tab-pill-selected-bg: light-dark(var(--color-neutral20), var(--color-neutral100));
+  --tab-pill-selected-hover-bg: light-dark(var(--color-neutral30), var(--color-neutral90));
+  --tab-pill-selected-active-bg: light-dark(var(--color-neutral40), var(--color-neutral80));
+  --tab-pill-selected-text-color: light-dark(var(--color-neutral100), var(--color-neutral20));
+}
+
+@supports not (color: light-dark(white, dark)) {
+  :root {
+    --main-bg: --color-neutral50;
+    --main-text-color: --color-neutral10;
+    --tab-default-text-color: var(--color-neutral20);
+    --tab-pill-bg: var(--color-neutral100);
+    --tab-pill-hover-bg: var(--color-neutral90);
+    --tab-pill-active-bg: var(--color-neutral80);
+    --tab-pill-selected-bg: var(--color-neutral20);
+    --tab-pill-selected-hover-bg: var(--color-neutral30);
+    --tab-pill-selected-active-bg: var(--color-neutral40);
+    --tab-pill-selected-text-color: var(--color-neutral100);
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --main-bg: --color-neutral10;
+      --main-text-color: --color-neutral50;
+      --tab-default-text-color: var(--color-neutral100);
+      --tab-pill-bg: var(--color-neutral20);
+      --tab-pill-hover-bg: var(--color-neutral30);
+      --tab-pill-active-bg: var(--color-neutral40);
+      --tab-pill-selected-bg: var(--color-neutral100);
+      --tab-pill-selected-hover-bg: var(--color-neutral90);
+      --tab-pill-selected-active-bg: var(--color-neutral80);
+      --tab-pill-selected-text-color: var(--color-neutral20);
+    }
+  }
 }
 
 /*

@@ -1,6 +1,6 @@
 .btn {
   align-items: center;
-  color: light-dark(var(--color-neutral20), var(--color-neutral100));
+  color: var(--tab-default-text-color);
   display: flex;
   justify-content: space-between;
   height: 4.2rem;
@@ -20,32 +20,32 @@
 }
 
 .pill {
-  background-color: light-dark(var(--color-neutral100), var(--color-neutral20));
+  background-color: var(--tab-pill-bg);
   border: 1px solid var(--color-neutral70);
   border-radius: 10rem;
 }
 
 .pill:hover {
-  background-color: light-dark(var(--color-neutral90), var(--color-neutral30));
+  background-color: var(--tab-pill-hover-bg);
   border-color: var(--color-neutral60);
 }
 
 .pill:active {
-  background-color: light-dark(var(--color-neutral80), var(--color-neutral40));
+  background-color: var(--tab-pill-active-bg);
 }
 
 .pill[aria-selected='true'] {
-  background-color: light-dark(var(--color-neutral20), var(--color-neutral100));
+  background-color: var(--tab-pill-selected-bg);
   border: none;
-  color: light-dark(var(--color-neutral100), var(--color-neutral20));
+  color: var(--tab-pill-selected-text-color);
 }
 
 .pill[aria-selected='true']:hover {
-  background-color: light-dark(var(--color-neutral30), var(--color-neutral90));
+  background-color: var(--tab-pill-selected-hover-bg);
 }
 
 .pill[aria-selected='true']:active {
-  background-color: light-dark(var(--color-neutral40), var(--color-neutral80));
+  background-color: var(--tab-pill-selected-active-bg);
 }
 
 .pill[aria-selected='true']:focus,
