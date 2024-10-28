@@ -14,6 +14,12 @@ pnpm install
 # And run the project
 pnpm dev
 
-# Optional: Run Storybook
+# Run Storybook
 pnpm storybook
+
+# Run tests
+pnpm test
+
+# Run tests in watch mode
+pnpm test:watch
 ```
