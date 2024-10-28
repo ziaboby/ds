@@ -5,48 +5,56 @@ import styles from './styles.module.css';
 
 export default function SwitchingTabs({ variant }: Pick<TabProps, 'variant'>) {
   return (
-    <TabsPattern.Wrapper defaultTabId="1" className={styles.w}>
+    <TabsPattern.Wrapper defaultTabId={getTabUniqueId('1', variant)} className={styles.w}>
       <h2 className={styles.title}>{variant} Tabs</h2>
-      <Label />
-      <TabsPattern.TabsList variant={variant} labelId="tabs-description">
-        <TabsPattern.Tab variant={variant} id="1">
+      <Label variant={variant} />
+      <TabsPattern.TabsList variant={variant} labelId={getLabelId(variant)}>
+        <TabsPattern.Tab variant={variant} id={getTabUniqueId('1', variant)}>
           Emails
         </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id="2">
+        <TabsPattern.Tab variant={variant} id={getTabUniqueId('2', variant)}>
           Files
         </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id="3">
+        <TabsPattern.Tab variant={variant} id={getTabUniqueId('3', variant)}>
           Edits
         </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id="4">
+        <TabsPattern.Tab variant={variant} id={getTabUniqueId('4', variant)}>
           Dashboard
         </TabsPattern.Tab>
-        <TabsPattern.Tab variant={variant} id="5">
+        <TabsPattern.Tab variant={variant} id={getTabUniqueId('5', variant)}>
           Messages
         </TabsPattern.Tab>
       </TabsPattern.TabsList>
-      <TabsPattern.TabContent id="1">
+      <TabsPattern.TabContent id={getTabUniqueId('1', variant)}>
         <FakeTabContent1 />
       </TabsPattern.TabContent>
-      <TabsPattern.TabContent id="2">
+      <TabsPattern.TabContent id={getTabUniqueId('2', variant)}>
         <FakeTabContent2 />
       </TabsPattern.TabContent>
-      <TabsPattern.TabContent id="3">
+      <TabsPattern.TabContent id={getTabUniqueId('3', variant)}>
         <FakeTabContent1 />
       </TabsPattern.TabContent>
-      <TabsPattern.TabContent id="4">
+      <TabsPattern.TabContent id={getTabUniqueId('4', variant)}>
         <FakeTabContent2 />
       </TabsPattern.TabContent>
-      <TabsPattern.TabContent id="5">
+      <TabsPattern.TabContent id={getTabUniqueId('5', variant)}>
         <FakeTabContent1 />
       </TabsPattern.TabContent>
     </TabsPattern.Wrapper>
   );
 }
 
-function Label() {
+function getTabUniqueId(id: string, variant: TabProps['variant']) {
+  return `${id}-${variant}`;
+}
+
+function getLabelId(variant: TabProps['variant']) {
+  return `tabs-description-${variant}`;
+}
+
+function Label({ variant }: Pick<TabProps, 'variant'>) {
   return (
-    <div id="tabs-description" style={{ display: 'none' }}>
+    <div id={getLabelId(variant)} style={{ display: 'none' }}>
       This is an example of a list of tabs
     </div>
   );
