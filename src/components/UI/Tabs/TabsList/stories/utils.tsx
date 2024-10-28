@@ -1,6 +1,7 @@
 import Badge from '../../../Badge';
 import Tab from '../../Tab';
 import type { TabProps } from '../../Tab/Tab.types';
+import TabContent from '../../TabContent';
 
 export function Sample({ variant }: Pick<TabProps, 'variant'>) {
   return (
@@ -49,5 +50,16 @@ export function Label() {
     <div id="example" style={LabelStyles}>
       This is an example of a list of tabs
     </div>
+  );
+}
+
+export function TabContents() {
+  return (
+    <>
+      <TabContent id="1">&nbsp;</TabContent>
+      <TabContent id="2">&nbsp;</TabContent>
+      <TabContent id="3">&nbsp;</TabContent>
+      <TabContent id="4">&nbsp;</TabContent>
+    </>
   );
 }
